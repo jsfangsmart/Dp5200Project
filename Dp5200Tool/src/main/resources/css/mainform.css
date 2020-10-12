@@ -1,0 +1,95 @@
+.hello{
+    -fx-font-size:30;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-color:black;
+}
+
+/*顶部菜单栏*/
+.def_MenuBar{
+    -fx-font-family:'Ubuntu';
+    -fx-font-size:15;
+    -fx-background-color:#F0F0F0;
+    -fx-border:none;
+    -fx-padding:0;
+    -fx-font-size:12;
+}
+.def_MenuItem{
+    -fx-font-family:'Ubuntu';
+    -fx-font-size:15;
+    -fx-padding: 8 60 8 30;
+    -fx-font-size:12;
+    -fx-cursor:hand;
+}
+.context-menu{
+    -fx-font-family:'Ubuntu';
+    -fx-font-size:15;
+    -fx-padding:2;
+    -fx-border-width:0;
+    -fx-background-color:rgb(242,242,242,0.96); /*0.87*/
+    /*-fx-background-radius:2px;*/
+    /*-fx-effect:dropshadow(three-pass-box, #F2F2F2, 1, 0, 0, 0);*/ /*阴影效果*/
+}
+.menu-bar > .container > .menu-button:showing{ /*菜单栏选中并移动到二级菜单时一级选中菜单的样式*/
+    -fx-background-color:#CCCCCE;
+    -fx-border-color:#CCCCCE;
+}
+.menu-button{
+    -fx-padding:1 4 1 4;
+    -fx-border-width:1;
+    -fx-border-color:#F0F0F0;
+}
+.menu-button:hover{
+    -fx-background-color:#CCCCCE;
+    -fx-border-color:#CCCCCE;
+}
+.menu-button > .label,.menu-item > .label{
+    -fx-text-fill:BLACK;
+}
+.menu-item:focused{
+    -fx-background-color:#CCCCCE; /*#90C8F6*/
+}
+.menu:focused > .right-container > .arrow{
+    -fx-background-color:#CCCCCE;
+}
+
+/*数据表格原始样式重写*/
+.table-cell{ /*table行中列*/
+    -fx-font-family:'Ubuntu';
+    -fx-font-size:20;
+    -fx-text-fill:#C1C1C1;
+    -fx-background-color:#252526;
+    -fx-border-color:#414141;
+    -fx-border-width:1 1 0 1;
+}
+.table-row-cell{ /*table行*/
+    -fx-padding:0;
+    -fx-background-color:#252526;
+    -fx-border-color:#414141;
+    -fx-border-width:1 1 0 1;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+.table-view .column-header,
+.table-view .filler,
+.table-view > .column-header-background > .show-hide-columns-button,
+.table-view:constrained-resize .filler{ /*table头部*/
+    -fx-background-color:#252526;
+}
+.table-view .column-header .label{ /*table头部标题*/
+    -fx-font-family:'Ubuntu';
+    -fx-font-size:20;
+    -fx-text-fill:#C1C1C1;
+}
+.table-view /*> column-header-background > nested-column-header >*/ .arrow{ /*table排序图标*/
+    -fx-background-color: #C1C1C1;
+}
+
+/*JFX默认按钮*/
+.button-raised{
+    -fx-padding:0.5em 0.5em;
+    -fx-font-size:14;
+    -jfx-button-type:RAISED;
+    -fx-background-color:rgb(77, 102, 204);
+    -fx-pref-width:100;
+    -fx-text-fill:#FFFFFF;
+    -fx-spacing:0.25em;
+}
